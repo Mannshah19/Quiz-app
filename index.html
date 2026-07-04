@@ -17,95 +17,40 @@
 <div class="stage">
   <div class="card-halo">
 
-    <!-- ===================================================== -->
-    <!-- QUESTION CARD — duplicate this whole .quiz-card block  -->
-    <!-- once per question, or keep one and swap its contents   -->
-    <!-- with your JS. Class hooks (data-* friendly) are named  -->
-    <!-- so your script can find everything easily.             -->
-    <!-- ===================================================== -->
+    
     <div class="quiz-card" id="quizCard">
 
       <div class="card-head">
-        <span class="category-pill" id="categoryPill">World Geography</span>
+        <span class="category-pill" id="categoryPill">Web Development</span>
 
-        <!-- Decorative timer ring. Drive --timer-fill's stroke-dashoffset
-            and toggle .is-urgent from your JS for a live countdown. -->
         <div class="timer-ring" id="timerRing">
           <svg viewBox="0 0 60 60">
             <circle class="timer-track" cx="30" cy="30" r="24"></circle>
             <circle class="timer-fill" id="timerFill" cx="30" cy="30" r="24"></circle>
           </svg>
-          <span class="timer-num" id="timerNum">15</span>
+          <span class="timer-num" id="timer">10</span>
         </div>
       </div>
 
-      <h2 class="question-text" id="questionText">
-        Which river runs through more countries than any other in the world?
-      </h2>
+      <h2 class="question-text" id="question"></h2>
 
-      <ul class="options-list" id="optionsList">
-        <li>
-          <button type="button" class="option" data-index="0">
-            <span class="opt-letter">A</span>
-            <span class="opt-text">The Amazon</span>
-            <svg class="opt-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="option" data-index="1">
-            <span class="opt-letter">B</span>
-            <span class="opt-text">The Danube</span>
-            <svg class="opt-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="option" data-index="2">
-            <span class="opt-letter">C</span>
-            <span class="opt-text">The Nile</span>
-            <svg class="opt-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="option" data-index="3">
-            <span class="opt-letter">D</span>
-            <span class="opt-text">The Mekong</span>
-            <svg class="opt-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-        </li>
-      </ul>
+      <div class="options-list" id="options"></div>
 
       <div class="card-foot">
-        <!-- Dots double as progress indicators and jump-to-question controls.
-             Add/remove .is-current / .is-done with your JS as the user moves through. -->
-        <div class="dots" id="dotsRow">
-          <button type="button" class="dot is-current" data-goto="0" aria-label="Question 1"></button>
-          <button type="button" class="dot" data-goto="1" aria-label="Question 2"></button>
-          <button type="button" class="dot" data-goto="2" aria-label="Question 3"></button>
-          <button type="button" class="dot" data-goto="3" aria-label="Question 4"></button>
-          <button type="button" class="dot" data-goto="4" aria-label="Question 5"></button>
-          <button type="button" class="dot" data-goto="5" aria-label="Question 6"></button>
-          <button type="button" class="dot" data-goto="6" aria-label="Question 7"></button>
-          <button type="button" class="dot" data-goto="7" aria-label="Question 8"></button>
-          <button type="button" class="dot" data-goto="8" aria-label="Question 9"></button>
-          <button type="button" class="dot" data-goto="9" aria-label="Question 10"></button>
-        </div>
+        <div class="dots" id="progressDots"></div>
 
+        
         <div class="foot-right">
-          <span class="q-counter">Question <strong id="qCurrent">1</strong> of <span id="qTotal">10</span></span>
+          <span class="q-counter" id="questionCounter"></span>
           <div class="nav-btns">
-            <button class="btn-nav btn-back" id="backBtn" disabled>← Back</button>
-            <button class="btn-nav btn-forward" id="forwardBtn" disabled>Next →</button>
+            <button class="btn-nav btn-forward" id="nextBtn">Next →</button>
           </div>
         </div>
       </div>
 
     </div>
 
-    <!-- ===================================================== -->
-    <!-- RESULTS CARD — separate static block, hidden by        -->
-    <!-- default. Show this (and hide #quizCard) once your JS   -->
-    <!-- determines the quiz is finished.                       -->
-    <!-- ===================================================== -->
+
     <div class="quiz-card is-hidden" id="resultsCard">
       <div class="result-view">
         <div class="result-kicker">Final score</div>
@@ -117,6 +62,6 @@
 
   </div>
 </div>
-<script href="./script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
