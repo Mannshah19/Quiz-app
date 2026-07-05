@@ -12,7 +12,9 @@ A simple web-based quiz app built with pure HTML, CSS and vanilla JavaScript. No
 
 ### Video Walkthrough
 
-<video src="./assets/images/Untitled%20design%20(1).mp4" controls width="100%"></video>
+[▶ Watch Demo Video](https://drive.google.com/file/d/1brLZh84XDxdhPMXhcvk2yN3c4DUUCVek/view?usp=sharing)
+
+> Upload your video to Google Drive, set sharing to "Anyone with the link", then replace YOUR_FILE_ID with the actual ID from the link.
 
 ---
 
