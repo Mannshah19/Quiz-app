@@ -1,4 +1,6 @@
-  :root{
+ *{ box-sizing:border-box; }
+ 
+ :root{
     --plum-deep:#1A1040;
     --plum:#2D1B4E;
     --magenta:#C42BB0;
@@ -12,8 +14,6 @@
     --ink-dim:rgba(34,26,53,0.55);
     --line:rgba(34,26,53,0.10);
   }
-
-  *{ box-sizing:border-box; }
 
   body{
     margin:0;
