@@ -111,5 +111,5 @@ Open `assets/js/script.js` and edit the `quizData` array at the top:
 
 ## Author
 
-Made by **Your Name**
+Made by **Mann Shah**
 Feel free to fork, use or improve it.
