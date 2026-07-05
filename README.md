@@ -12,9 +12,7 @@ A simple web-based quiz app built with pure HTML, CSS and vanilla JavaScript. No
 
 ### Video Walkthrough
 
-https://github.com/your-username/quiz-app/assets/your-id/your-video.mp4
-
-> To add your video — upload it to your GitHub repo under a release or issue, copy the link and replace the URL above.
+<video src="./assets/images/Untitled%20design%20(1).mp4" controls width="100%"></video>
 
 ---
 
