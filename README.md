@@ -1,6 +1,6 @@
 # Quiz — Know It or Show It
 
-A clean and minimal web-based quiz app built with HTML, CSS and vanilla JavaScript. No frameworks, no libraries — just pure front-end code.
+A simple web-based quiz app built with pure HTML, CSS and vanilla JavaScript. No frameworks, no installs — just open and play.
 
 ---
 
@@ -8,34 +8,34 @@ A clean and minimal web-based quiz app built with HTML, CSS and vanilla JavaScri
 
 ### Screenshot
 
-![Quiz App Screenshot](./assets/screenshot.png)
+![Quiz App Screenshot](./assets/images/Screenshot%202026-07-05%20144441.png)
 
 ### Video Walkthrough
 
 https://github.com/your-username/quiz-app/assets/your-id/your-video.mp4
 
-> Replace the screenshot path and video link above with your actual files after uploading them.
+> To add your video — upload it to your GitHub repo under a release or issue, copy the link and replace the URL above.
 
 ---
 
 ## What It Does
 
 - Shows 10 Web Development questions one by one
-- Each question has a 10 second countdown timer with an animated ring
-- You pick one of 4 options — it highlights green if correct, red if wrong
-- Progress dots at the bottom show where you are in the quiz
-- At the end it shows your final score with a result message
-- You can restart and play again anytime
+- Each question has a 10 second countdown timer with an animated SVG ring
+- Pick one of 4 options — turns green if correct, red if wrong
+- Progress dots at the bottom track where you are
+- Final score screen at the end with a result message
+- Play again button resets everything from question 1
 
 ---
 
 ## How To Run
 
-No setup needed. Just open the file in your browser.
+No setup needed at all.
 
 1. Download or clone this project
 2. Open `index.html` in any browser
-3. That's it — the quiz starts automatically
+3. Quiz starts automatically
 
 ---
 
@@ -43,9 +43,14 @@ No setup needed. Just open the file in your browser.
 
 ```
 Quiz app/
-├── index.html       — page structure and layout
-├── style.css        — all the styling and animations
-└── script.js        — all the quiz logic
+├── index.html
+└── assets/
+    ├── css/
+    │   └── style.css       — all styling and animations
+    ├── js/
+    │   └── script.js       — all quiz logic
+    └── images/
+        └── screenshot.png  — preview image
 ```
 
 ---
@@ -53,46 +58,44 @@ Quiz app/
 ## Built With
 
 - HTML5
-- CSS3 — custom properties, flexbox, SVG animation
+- CSS3 — custom properties, flexbox, SVG ring animation
 - Vanilla JavaScript — DOM manipulation, setInterval, createElement
 - Google Fonts — Fraunces, Inter, JetBrains Mono
-- Bootstrap 5 — loaded but layout is mostly custom CSS
+- Bootstrap 5 — linked but layout is mostly custom CSS
 
 ---
 
 ## How The JS Works
 
-The whole quiz runs through a few simple functions:
-
-- `loadQuestion()` — builds the current question and options on screen
-- `createDots()` — draws the progress dots at the bottom
-- `startTimer()` — starts the 10 second countdown and animates the ring
-- `showResult()` — hides the quiz and shows the final score screen
-- `nextBtn` click — checks the answer, highlights correct/wrong, then moves on
-- `restartBtn` click — resets everything and starts from question 1
+- `loadQuestion()` — builds the current question and option buttons on screen
+- `createDots()` — draws the progress dots and marks done/current
+- `startTimer()` — runs the 10s countdown and animates the SVG ring
+- `showResult()` — hides the quiz card and shows the final score
+- `nextBtn` click — checks answer, highlights correct/wrong, moves to next
+- `restartBtn` click — resets score and question index, starts over
 
 ---
 
 ## Questions Covered
 
-All 10 questions are about Web Development basics:
+All 10 questions are Web Development basics:
 
-1. HTML tags
-2. CSS box model
+1. HTML script tag
+2. CSS padding vs margin
 3. Image alt attribute
-4. JavaScript keywords
-5. CSS display values
+4. JavaScript const keyword
+5. CSS display none
 6. Viewport meta tag
-7. JSON methods
-8. CSS Flexbox
-9. CSS selectors
+7. JSON.parse method
+8. CSS Flexbox justify-content
+9. CSS first-child selector
 10. What DOM stands for
 
 ---
 
 ## Customising
 
-Want to change the questions? Open `script.js` and edit the `quizData` array at the top. Each question follows this format:
+Open `assets/js/script.js` and edit the `quizData` array at the top:
 
 ```js
 {
@@ -102,7 +105,7 @@ Want to change the questions? Open `script.js` and edit the `quizData` array at 
 }
 ```
 
-The `answer` is the index of the correct option — 0 for A, 1 for B, 2 for C, 3 for D.
+`answer` is the index of the correct option — 0 for A, 1 for B, 2 for C, 3 for D.
 
 ---
 
