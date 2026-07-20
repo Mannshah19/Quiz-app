@@ -14,7 +14,6 @@ A simple web-based quiz app built with pure HTML, CSS and vanilla JavaScript. No
 
 [▶ Watch Demo Video](https://drive.google.com/file/d/1brLZh84XDxdhPMXhcvk2yN3c4DUUCVek/view?usp=sharing)
 
-> Upload your video to Google Drive, set sharing to "Anyone with the link", then replace YOUR_FILE_ID with the actual ID from the link.
 
 ---
 
